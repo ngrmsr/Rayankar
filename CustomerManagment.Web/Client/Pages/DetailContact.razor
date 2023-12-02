@@ -1,0 +1,45 @@
+﻿@page "/DetailCustomer/{CustomerId:int}"
+<h3>Detail Customer</h3>
+@using Domain.Customers.Entities
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager;
+
+<dl>
+    <dt>First Name : </dt>
+    <dd>@Customer.Firstname</dd>
+    <dt>Last Name : </dt>
+    <dd>@Customer.Lastname</dd>
+    <dt>Date Of Birth : </dt>
+    <dd>@Customer.DateOfBirth</dd>
+    <dt>Email : </dt>
+    <dd>@Customer.Email</dd>
+    <dt> Mobile : </dt>
+    <dd>@Customer.PhoneNumber</dd>
+    <dt>Bank Account Number : </dt>
+    <dd>@Customer.BankAccountNumber</dd>
+    <dt></dt>
+    <dd>
+        <a class="btn btn-danger" onclick="@Delete">Delete</a>
+    </dd>
+</dl>
+
+@code {
+    [Parameter]
+    public int CustomertId { get; set; }
+
+    public Customer Customer = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        Customer = await HttpClient.GetFromJsonAsync<Customer>
+                ($"/GetCustomerById/{CustomertId}");
+    }
+
+    protected async Task Delete()
+    {
+        await HttpClient.DeleteAsync($"/DeleteCustomer/{CustomertId}");
+        NavigationManager.NavigateTo("/CustomerList");
+    }
+
+}

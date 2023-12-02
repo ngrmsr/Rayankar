@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ocDSZseiqeim+vr0DY9PjIYNR5AxD+s1NWa7YGHdn2fgxPsGffyUDZ1aowcLWJy0xst1A8Tn8ykSUskN5H1Tyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\n.mesri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\n.mesri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

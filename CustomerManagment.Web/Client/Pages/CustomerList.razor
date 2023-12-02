@@ -1,0 +1,60 @@
+﻿@page "/CustomerList"
+@using Domain.Customers.Entities
+@using System.Net.Http.Json
+@inject HttpClient HttpClient
+
+<h3>Customer List</h3>
+<p>
+	<a class="btn btn-outline-success" href="/AddCustomer">Create New</a>
+</p>
+@if (customers != null)
+{
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>DateOfBirth</th>
+				<th>Email</th>
+				<th>PhoneNumber</th>
+				<th>BankAccountNumber</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in customers)
+			{
+				<tr>
+					<td>@item.Firstname</td>
+					<td>@item.Lastname</td>
+					<td>@item.DateOfBirth </td>
+					<td>@item.Email</td>
+					<td>@item.PhoneNumber </td>
+					<td>@item.BankAccountNumber </td>
+					<td>
+						<a class="btn btn-outline-warning"
+				   href="/EditCustomer/@item.Id">Edit</a>
+						<a class="btn btn-outline-primary"
+				   href="/DetailCustomer/@item.Id">Detail</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<div class="alert alert-warning">
+		No Data
+	</div>
+}
+
+@code {
+	private Customer[] customers;
+
+	protected override async Task OnInitializedAsync()
+	{
+		customers = await HttpClient.GetFromJsonAsync<Customer[]>("/GetAllCustomers");
+	}
+
+}
+

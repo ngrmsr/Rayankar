@@ -1,0 +1,100 @@
+﻿@page "/AddCustomer"
+@page "/EditCustomer/{CustomerId:int}"
+@using Domain.Customers.Entities
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager;
+
+<h3>Add Customer</h3>
+<EditForm Model="@Customer" OnValidSubmit="Save">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label>First Name</label>
+        <div class="col-md-4">
+            <InputText @bind-Value="Customer.Firstname" class="form-control" />
+            <ValidationMessage For="() => Customer.Firstname" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Last Name</label>
+        <div class="col-md-4">
+            <InputText @bind-Value="Customer.Lastname" class="form-control" />
+            <ValidationMessage For="() => Customer.Lastname" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <div class="col-md-4">
+            <InputText @bind-Value="Customer.Email" class="form-control" />
+            <ValidationMessage For="() => Customer.Email" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>PhoneNumber</label>
+        <div class="col-md-4">
+            <InputText @bind="Customer.PhoneNumber.ToString()" class="form-control" />
+            <ValidationMessage For="() => Customer.PhoneNumber" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Date Of Birth</label>
+        <div class="col-md-4">
+            <InputText @bind="Customer.DateOfBirth.ToString()" class="form-control" />
+            <ValidationMessage For="() => Customer.DateOfBirth" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>BankAccountNumber</label>
+        <div class="col-md-4">
+            <InputTextArea @bind-Value="Customer.BankAccountNumber" class="form-control" />
+            <ValidationMessage For="() => Customer.BankAccountNumber" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label></label>
+        <div class="col-md-4">
+            <input type="submit" value="@title" class="btn btn-@btnColor" />
+        </div>
+    </div>
+</EditForm>
+
+
+@code {
+    private string title = "Add Customer";
+    private string btnColor = "success";
+
+    [Parameter]
+    public int CustomerId { get; set; }
+
+    public Customer Customer = new();
+
+}
+
+@functions
+{
+    protected override async Task OnInitializedAsync()
+    {
+        if (CustomerId != 0)
+        {
+            title = "Edit Customer";
+            btnColor = "warning";
+            Customer = await HttpClient.GetFromJsonAsync<Customer>
+                ($"/PutCustomer/{CustomerId}");
+        }
+    }
+
+    protected async Task Save()
+    {
+        if (CustomerId == 0)
+        {
+            await HttpClient.PostAsJsonAsync("/api/Customers", Customer);
+        }
+        else
+        {
+            Customer.Id = CustomerId;
+            await HttpClient.PutAsJsonAsync($"/PutCustomer", Customer);
+        }
+
+
+        NavigationManager.NavigateTo("/CustomerList");
+    }
+}

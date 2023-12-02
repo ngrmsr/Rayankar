@@ -1,0 +1,747 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Server\\CustomerManagment.Web.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\CustomerManagment.Web.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\CustomerManagment.Web.Client.csproj",
+        "projectName": "CustomerManagment.Web.Client",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\CustomerManagment.Web.Client.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.10, 6.0.10]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Server\\CustomerManagment.Web.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Server\\CustomerManagment.Web.Server.csproj",
+        "projectName": "CustomerManagment.Web.Server",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Server\\CustomerManagment.Web.Server.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\CustomerManagment.Web.Client.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Client\\CustomerManagment.Web.Client.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\IOC.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\IOC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "libphonenumber-csharp": {
+              "target": "Package",
+              "version": "[8.13.26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj",
+        "projectName": "CustomerManagment.Web.Shared",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\CustomerManagment.Web.Shared.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\CustomerManagment.Web\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj",
+        "projectName": "Framework",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj",
+        "projectName": "Infrastructure.Dapper",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj",
+        "projectName": "Infrastructure.SqlServer",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\Infrastucture.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\Infrastucture.Data.csproj",
+        "projectName": "Infrastucture.Data",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\Infrastucture.Data.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\IOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\IOC.csproj",
+        "projectName": "IOC",
+        "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\IOC.csproj",
+        "packagesPath": "C:\\Users\\n.mesri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\IOC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\n.mesri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\telerik.ui.for.aspnet.core\\2020.2.617": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Application\\Application.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Framework\\Framework.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.Dapper\\Infrastructure.Dapper.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastructure.SqlServer\\Infrastructure.SqlServer.csproj"
+              },
+              "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\Infrastucture.Data.csproj": {
+                "projectPath": "C:\\Users\\n.mesri\\Downloads\\12\\12\\12\\Rayankar-Project\\Infrastucture.Data\\Infrastucture.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
